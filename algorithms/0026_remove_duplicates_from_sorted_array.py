@@ -76,7 +76,7 @@ class Solution:
         N = len(A)
         deletes = []
         curr = A[0]
-        for el in A[1]:
+        for el in A[1:]:
             if el != curr:
                 if duplicate_count > MAX_OCCURENCES:
                     deletes.append((ui, duplicate_count - MAX_OCCURENCES))
